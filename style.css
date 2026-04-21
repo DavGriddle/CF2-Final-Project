@@ -1,0 +1,222 @@
+body {
+  font-family: "Alan Sans", sans-serif;
+  background-color: #e8eef5;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 8px 0 16px 0;
+}
+
+.mainContainer > body {
+  margin: 20px;
+  align-items: center;
+}
+
+footer {
+  padding: 20px 50px;
+  background-color: #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  color: #1a1a1a;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.mainContainer {
+  background-color: #f1f5f9;
+  width: calc(90% - 50px);
+  max-width: 800px;
+  margin: 25px auto;
+  padding: 12px 24px 28px 24px;
+  border-radius: 16px;
+  border: 1px solid #ddd;
+}
+
+/* Eyebrow */
+.eyebrow {
+  font-family: "Ubuntu Mono", monospace;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #999;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 0;
+}
+
+/* Title */
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: #1a1a1a;
+}
+
+.subtitle {
+  margin: 0 0 24px 0;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* FORM */
+div.input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+div.input-container input {
+  flex: 1;
+}
+
+div.input-container select {
+  flex-shrink: 0;
+  opacity: 0.6;
+  align-self: center;
+}
+
+div.input-container button {
+  flex-shrink: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+form p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+input {
+  padding: 11px 14px;
+  font-size: 15px;
+  font-family: "Alan Sans", sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+  outline: none;
+}
+
+input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+select {
+  appearance: none; /* Removes default browser styling */
+  -webkit-appearance: none; /* Safari/Chrome support */
+  -moz-appearance: none; /* Firefox support */
+  padding: 11px 14px;
+  font-size: 15px;
+  font-family: "Alan Sans", sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  background: url("select.svg") no-repeat right 10px center; /* Add custom arrow */
+  background-color: white;
+}
+
+form button {
+  padding: 11px;
+  font-size: 15px;
+  font-family: "Alan Sans", sans-serif;
+  font-weight: 600;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    transform 0.1s;
+}
+
+form button:hover {
+  background-color: #1d4ed8;
+}
+
+form button:active {
+  transform: scale(0.98);
+  background-color: #1e40af;
+}
+
+/* TASKS */
+
+#sort-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-family: "Alan Sans", sans-serif;
+  font-weight: 600;
+  background-color: #e5e7eb;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    transform 0.1s;
+}
+#sort-btn:hover {
+  background-color: #d1d5db;
+}
+#sort-btn:active {
+  transform: scale(0.98);
+  background-color: #9ca3af;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+ul#task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: white;
+  border-radius: 8px;
+  
+}
+
+/* On screens smaller than 500px */
+@media (max-width: 500px) {
+  div.input-container {
+    flex-wrap: wrap;
+  }
+
+  div.input-container input {
+    flex: 1;
+    min-width: 0;
+  }
+
+  div.input-container select {
+    flex-shrink: 0;
+  }
+
+  div.input-container button {
+    width: 100%;
+  }
+}
