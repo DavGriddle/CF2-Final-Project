@@ -30,9 +30,9 @@ task-organizer/
 
 ## How to Run
 
-Ill make this accessable via a web link when im finished. 
-
-If its not here and your grading it, ive forggoten to add it. PLEASEE dont hate me, im just stupid. Can you please clone it and open the index.html in a live server?
+ACCESS IT [HERE](https://davgriddle.github.io/CF2-Final-Project/)
+> [!NOTE]
+> If for some reason this link isnt working, pleasee clone this project and use a live server on index.html to view it!!.
 
 
 ## How It Works
