@@ -10,8 +10,8 @@ This project focuses on implementing a sorting algorithm in JavaScript to organi
 
 ## Technologies Used
 
-- **HTML** — page structure and input elements
-- **CSS** — layout and visual styling
+- **HTML** — page structure and input elements (GENERAL LAYOUT USED FROM ANOTHER PROJECT)
+- **CSS** — layout and visual styling (STYLEING USED FROM A DIFFERENT PROJECT) 
 - **JavaScript** — focusing on class materials first, if i have time, i will maybe work on local storage so that it always saves!
 
 ## Features
